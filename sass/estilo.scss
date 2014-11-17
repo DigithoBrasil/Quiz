@@ -1,0 +1,473 @@
+
+@import url(font.css);
+
+
+$font-cursiva:	'Kalam', cursive;
+$font-stack:    Helvetica, sans-serif;
+$font-roboto:	'Roboto', sans-serif;
+$primary-color: #333;
+
+$cor-agilidade:		#bd4847;
+$cor-ux:			#3173b8;
+$cor-front-end:		#c17422;
+$cor-back-end:		#595d63;
+$cor-testes:		#44a075;
+$cor-cultura-nerd: 	#4293a5;
+$cor-digithobrasil:	#7d448f;
+$cor-tendencias:	#be448d;
+
+
+
+@mixin sprite{
+	text-indent: -99999px;
+	background-color: transparent;
+	border: none;
+	background-image: url('images/sprite.png');
+	display: block;	
+	margin: 0 auto;
+}
+
+@mixin fixaJanela{
+	display: block;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height: 100%;
+}
+
+body {
+  font: 200% $font-cursiva;
+  color: $primary-color;
+  background: #eee;
+  position: relative;
+}
+
+
+.logo{
+	@include  sprite;
+	width: 218px;
+	height: 158px;
+	background-position: 0 -324px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+.logo-digithobrasil{
+	@include sprite;
+	background-position: 0 -817px;
+	width: 140px;
+	height: 100px;
+	margin: 50px auto 0;
+}
+
+h2.chamada{
+	text-align: center;
+	font-size: 1em;
+	margin-top: 75px;
+}
+
+section{
+	&.home{
+		display: table;
+		vertical-align: middle;
+		text-align: middle;
+		margin: 5% auto 2%;
+
+
+		.logo-home{
+			@include  sprite;
+			width: 400px;
+			height: 300px;
+			background-position: 0 0;
+		}
+
+		h2{
+			text-align: center;
+			font-size: 1em;
+			margin-bottom: 70px;
+		}
+
+		a.botao-iniciar-quiz{
+			@include sprite;
+			width: 245px;
+			height: 70px;
+			background-position: 0 -705px;
+		}
+
+		ul{
+			margin: 0 auto 60px;
+			font-size: 0.65em;
+			color: #c74450;
+			display: table;
+		}
+	}
+}
+
+
+
+section.categorias-quiz{
+	width: 900px;
+	margin: 0 auto;
+}
+.categorias{
+	margin: 0;
+	padding: 0;
+
+	li{
+		display: inline-block;
+		margin: 1px -3px;
+		padding: 10px;
+		color: #ededed;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+
+		.icone{
+			@include sprite;
+			margin-top: 30px;
+			height: 110px;
+		}
+
+		&#temaBackEnd{
+			background-color: $cor-back-end;
+
+			.icone{
+				width:105px;
+				background-position: 0 -945px;
+			}
+		}
+
+		&#temaFrontEnd{
+			background-color: $cor-front-end;
+
+			.icone{
+				width:200px;
+				background-position: 0 -1050px;
+			}
+		}
+
+		&#temaUX{
+			background-color: $cor-ux;
+
+			.icone{
+				width:110px;
+				background-position: 0 -1415px;
+			}
+		}
+
+		&#temaAgilidade{
+			background-color: $cor-agilidade;
+
+			.icone{
+				width:110px;
+				background-position: 0 -1775px;
+			}
+		}
+
+		&#temaTestes{
+			background-color: $cor-testes;
+
+			.icone{
+				width:100px;
+				background-position: 0 -1170px;
+			}
+		}
+
+		&#temaDigithoBrasil{
+			background-color: $cor-digithobrasil;
+
+			.icone{
+				width:145px;
+				background-position: 0 -1290px;
+			}
+		}
+
+		&#temaTendencias{
+			background-color: $cor-tendencias;
+
+			.icone{
+				width:80px;
+				background-position: 0 -1540px;
+			}
+		}
+
+		&#temaCulturaNerd{
+			background-color: $cor-cultura-nerd;
+
+			.icone{
+				width:105px;
+				background-position: 0 -1653px;
+			}
+		}
+
+		&.bloqueado{
+			overflow: hidden;
+			div{
+				background-color: rgba(255, 30, 0, 0.75);
+				background-position: 0 -2370px;
+				background-image: url(images/sprite.png);
+				background-repeat: no-repeat;
+				height: 220px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 220px;
+				z-index: 3;
+
+				&.acertou-questao{
+					background-position:0 -2605px;
+					background-color: rgba(0, 205, 109, 0.75);
+				}
+			}
+		}
+	}
+}
+
+#questoes{
+	display: none;
+	color: white;
+
+	&.exibir{
+		@include fixaJanela;
+		z-index: 5;
+	}
+
+	&.agilidade{
+		background: $cor-agilidade;
+	}
+
+	&.ux{
+		background: $cor-ux;
+	}
+
+	&.front-end{
+		background: $cor-front-end;
+	}
+
+	&.back-end{
+		background: $cor-back-end;
+	}
+
+	&.testes{
+		background: $cor-testes;
+	}
+
+	&.cultura-nerd{
+		background: $cor-cultura-nerd;
+	}
+
+	&.digithobrasil{
+		background: $cor-digithobrasil;
+	}
+
+	&.tendencias{
+		background: $cor-tendencias;
+	}
+
+	.mensagem{
+		display: none;
+	}
+
+	.fechar{
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 5px 10px;
+		cursor: pointer;
+
+			span.icone{
+				@include sprite;
+				background-position: -48px -539px;
+				width: 22px;
+				height: 22px;
+				margin:7px;
+				display: inline-block;
+				vertical-align: sub;
+			}
+
+			&:hover{
+				opacity: 0.8;
+			}
+	}
+
+	h2{
+		margin: 100px auto 20px;
+		text-align: center;
+		display: table;
+		text-decoration: underline;
+	}
+
+	ul{
+		display: table;
+		margin: 0 auto;
+		padding: 0;
+
+		li{
+			list-style-type: decimal;
+			cursor: pointer;
+			padding: 5px 10px;
+			background-color: rgba(255, 255, 255, 0.75);
+			color:#333;
+			margin: 5px 0 5px 70px;
+			border-radius: 5px;
+			min-width: 500px;
+
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+
+			&.selecionado{
+				background-color: rgba(255, 255, 255, 0.25);
+				color: white;
+			}
+		}
+	}
+
+	.mensagem-de-validacao{
+		font-size: 30px;
+		color: white;
+		text-align: center;
+	}
+
+	.mensagem{
+		@include fixaJanela;
+		background-color: rgba(230, 230, 230, 0.9);
+		color: #222;
+		display: none;
+		text-align: center;
+
+		.icone{
+			@include sprite;
+			width: 167px;
+			height: 167px;
+
+			&.icone-acertou{
+				background-position: 0 -1975px;
+			}
+
+			&.icone-errou{
+				background-position: 0 -2176px;
+			}
+		}
+
+		p.exibe-resposta-certa{
+			color:$cor-agilidade;
+			.span{
+				font-size: 1.2em;
+			}
+		}
+
+		.mensagem-titulo{
+			font-size: 2em;
+		}
+
+		button{
+			background: none #78b4ab;
+			margin: 0 auto;
+			display: inline-table;
+			color: white;
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			padding: 0;
+			margin: 20px; 
+		}
+	}
+
+	button{
+		display: block;
+		margin: 30px auto;
+		font-family: $font-cursiva;
+		font-size: 200%;
+		width: 170px;
+		border: none;
+		cursor: pointer;
+
+		background-image: url(images/sprite.png);
+		background-position: 0 -2825px;
+		background-color: transparent;
+		color: green;
+
+		&:hover{
+			background-position: -174px -2825px;
+		}
+	}
+}
+
+.botao-final{
+	color: #999;
+    display: table;
+    font-size: 2em;
+    margin: 20px auto 0;
+    text-align: center;
+
+    &:hover{
+    	color:#444;
+    }
+
+}
+
+
+@keyframes backgroundAnimado {
+  	0% { background-color: $cor-cultura-nerd ; }
+
+	12.5% { background-color: $cor-agilidade ;}
+
+  	25% { background-color: $cor-back-end ; }
+
+	37.5% { background-color: $cor-front-end ; }
+
+	50% { background-color: $cor-ux ; }
+
+	62.5% { background-color: $cor-digithobrasil ; }
+
+	75% { background-color: $cor-tendencias ; }
+
+	87.5% { background-color: $cor-testes ; }
+
+	100% { background-color: $cor-cultura-nerd ; }
+}
+
+
+#placar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-family: $font-roboto;
+	text-align: center;
+	font-size: 21px;
+	text-align: middle;
+	z-index: -1;
+
+
+	p{
+		margin: 5px;
+		padding: 30px;
+		color: white;
+		background-color: $cor-testes;
+		width: 110px;
+		height: 110px;
+		border-radius: 100px;
+
+		.respostas-certas, .total-de-respostas{
+			font-size: 150%;
+			border-radius: 10px 10px 0 0;
+		}
+		&:last-child{
+			background-color: $cor-agilidade;
+			color:white;
+
+			.tempo-gasto, .tempo-final{
+				font-size: 175%;
+			}
+		}
+	}
+}
