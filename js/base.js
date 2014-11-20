@@ -61,10 +61,6 @@ function pegaResultadoFinal() {
 		respostasCorretas = $("#placar .respostas-certas").text(),
 		pegaTotalDeRespondidos = $("section.categorias-quiz ul.categorias li.bloqueado").length;
 
-	console.log("total respondidos: " + pegaTotalDeRespondidos);
-	console.log("Respostas certas: " + respostasCorretas);
-	console.log("tempo total: " + tempo);
-
 	if (pegaTotalDeRespondidos == 8) {
 		$(".tempo-gasto").removeAttr("class").addClass("tempo-final").text(tempo);
 		$("body")
