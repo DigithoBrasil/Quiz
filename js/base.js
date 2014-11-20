@@ -75,12 +75,19 @@ function pegaResultadoFinal() {
 }
 
 function finalizar() {
-	var nome = $("body #nome").val().trim();
-	var email = $("body #email").val().trim();
+	var nome = $("body #nome").val().trim(),
+		email = $("body #email").val().trim();
 
 	if (!validarInformacoes(nome, email)) return;
 
-	localStorage.setItem(email, nome);
+	var data = {
+		nome: nome,
+		tempo: $(".tempo-final").text(),
+		quantidadeDePerguntas: $("section.categorias-quiz ul.categorias li.bloqueado").length,
+		respostasCorretas: $("#placar .respostas-certas").text()
+	};
+
+	localStorage.setItem(email, JSON.stringify(data));
 
 	window.location = "index.html";
 }
