@@ -1,9 +1,14 @@
 function montarQuestoesBackEnd(){
-	var questoes = new Array( 
-		["Questão Back-End 01?", "01 Resposta Back-End 01 Certa", "01 Resposta Back-End Errada 02", "01 Resposta Back-End Errada 03", "01 Resposta Back-End Errada 04"],
-		["Questão Back-End 02?", "02 Resposta Back-End 01 Certa", "02 Resposta Back-End Errada 02", "02 Resposta Back-End Errada 03", "02 Resposta Back-End Errada 04"],
-		["Questão Back-End 03?", "03 Resposta Back-End 01 Certa", "03 Resposta Back-End Errada 02", "03 Resposta Back-End Errada 03", "03 Resposta Back-End Errada 04"],
-		["Questão Back-End 04?", "04 Resposta Back-End 01 Certa", "04 Resposta Back-End Errada 02", "04 Resposta Back-End Errada 03", "04 Resposta Back-End Errada 04"]
+	var questoes = new Array(
+		["Qual é o melhor design pattern para se utilizar quando se deseja definir um algoritmo geral que estabelece uma série de passos para cumprir um requisito da aplicação?", "Template Method ", "Decorator", "Chain Of Responsibility", "Flyweight"],
+		["Qual é o objetivo do padrão do design pattern Null Object.", "Evitar verificações repetitivas se o objeto é nulo em toda a aplicação", "Evitar exceções de NullPointerException", "Evitar o retorno de valores nulos pelos métodos", "Evitar exceções de NullObject"],
+		["Qual das opções abaixo não é um modificador de acesso?", "abstract", "private", "protected", "public"],
+		["Qual padrão de projeto que pode estar mais próximo de ser considerado uma opção ao uso de herança?", "Decorator", "Chain of Responsability", "Observer", "FlyWeight"],
+		["Em padrões de projeto o que significa o acrônimo MVC?", "Model View Controller", "Model Visitor Controller", "Modeling View Concurrency", "Management View Controller"],
+		["Quando um método é responsável por realizar muitas tarefas ele é considerado um método com:", "Baixa coesão", "Alta ligação", "Superfaturamento", "Alto acoplamento"],
+		["O que é um objeto imutável?", "É um objeto no qual seu estado não pode ser modificado após ser criado", "É um objeto que não teve o código da sua classe alterado nos últimos dias", "É um objeto que foi instanciado apenas uma vez", "É um objeto que tem apenas um atributo"],
+		["Qual é o benefício dos padrões de nomenclaturas do código fonte?", "Tornar o código mais legível", "Deixar mais visível o nome do desenvolvedor que trabalhou no código", "Facilitar a distinção entre diferentes produtos de software", "Garantir que “métodos órfãos” não sejam criados"]
+
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Back-End depois da resposta.";
 

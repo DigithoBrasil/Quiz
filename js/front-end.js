@@ -3,7 +3,9 @@ function montarQuestoesFrontEnd(){
 		["Qual o resultado da expressão '1' + 1 em JavaScript?", "'11'", "2", "'2'", "0"],
 		["Qual o resultado da comparação 20 == '20' em JavaScript?", "True", "False", "null", "Undefined"],
 		["Qual das opções não é um método de um Array em JavaScript?", ".remove()", ".push()", ".map()", ".splice()"],
-		["Qual das opções não é uma característica do JavaScript?", "Fortemente tipada", "Baseada em prototype", "Dinâmica", "Lingaguem interpretada"]
+		["Qual das opções não é uma característica do JavaScript?", "Fortemente tipada", "Baseada em prototype", "Dinâmica", "Linguagem interpretada"],
+		["Qual a diferença entre frameworks web baseados em ação e frameworks web baseados em componentes? ", "Frameworks Component Based mantém sincronia entre os estados dos componentes da view e do seu modelo de dados no lado do servidor.Frameworks Action Based não mantém necessariamente esse vínculo entre os estados do servidor e do cliente, geralmente irá receber diretamente requisições HTTP", "Frameworks Component Based tem várias funcionalidades já implementadas, o que facilita seu uso com IDE's. Frameworks Action Based levam esse nome porque baseam-se nas ações do usuário", "Frameworks Component Based são feitos em Java. Frameworks Action Based são feitos em HTML.", "Frameworks Component Based são aqueles que usam anotações em classes. Frameworks Action Based levam esse nome porque baseam-se nas ações do usuário"],
+		["", "", "", "", ""]
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Front-End depois da resposta.";
 

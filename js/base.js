@@ -26,6 +26,14 @@ function fecharMensagem() {
 	startCountdown();
 }
 
+function fecharMensagemSemPararTempo() {
+	animacaoSaida();
+
+	setTimeout(function() {
+		limparTela();
+	}, 1200);
+}
+
 function bloquearRespondidas() {
 	var pegaCategoriaRespondida = areaQuestoes.attr("name");
 	$("#" + pegaCategoriaRespondida).addClass("bloqueado").append("<div class='animated bounceInDown'></div>");
@@ -37,7 +45,7 @@ function verificaSeAcertou() {
 }
 
 function fecharJanela() {
-	areaQuestoes.append("<span class='fechar' onclick='fecharMensagem();'><span class='icone'></span>Fechar</span>");
+	areaQuestoes.append("<span class='fechar' onclick='fecharMensagemSemPararTempo();'><span class='icone'></span>Fechar</span>");
 }
 
 

@@ -1,9 +1,15 @@
 function montarQuestoesTestes(){
 	var questoes = new Array( 
-		["Questão Testes 01?", "01 Resposta Testes 01 Certa", "01 Resposta Testes Errada 02", "01 Resposta Testes Errada 03", "01 Resposta Testes Errada 04"],
-		["Questão Testes 02?", "02 Resposta Testes 01 Certa", "02 Resposta Testes Errada 02", "02 Resposta Testes Errada 03", "02 Resposta Testes Errada 04"],
-		["Questão Testes 03?", "03 Resposta Testes 01 Certa", "03 Resposta Testes Errada 02", "03 Resposta Testes Errada 03", "03 Resposta Testes Errada 04"],
-		["Questão Testes 04?", "04 Resposta Testes 01 Certa", "04 Resposta Testes Errada 02", "04 Resposta Testes Errada 03", "04 Resposta Testes Errada 04"]
+		["Segundo Mike Cohn, a pirâmide de testes automatizados é formada por quais tipos começando pela base?", "Unidade, Serviço, UI", "Unidade, Integração, UI", "Unidade, Sistema, UI", "Sistema, Integração, UI"],
+		["Qual é o maior benefício proporcionado pelo uso de testes automatizados?", "Feedback rápido", "Redução de erros", "Melhoria do código", "Arquitetura evolutiva"],
+		["Em TDD, como ocorre o ciclo de desenvolvimento?", "Vermelho -> verde -> refatorar", "Verde -> vermelho -> refatorar", "Refatorar -> vermelho -> verde", "Refatorar -> verde -> vermelho"],
+		["O TDD é um acrónimo de? ", "Test Driven Development", "Teste Depois do Desenvolvimento", "Test Definitely Done", "Test Driven Documentation"],
+		["Qual tipo de teste NÃO pode ser automatizado?", "Exploratório", "Fumaça", "Desempenho", "Unidade"],
+		["O que é cobertura de código (code coverage)?", "Percentual de código que foi exercitado por testes automatizados", "Número de desenvolvedores que entendem como o código funciona?", "Percentual de código do controle de versão incuído na build", "Um puxadinho construído para proteger o código do Sereno"],
+		["O que é um teste de unidade?", "Um teste que isola e verifica uma pequena parte de uma funcionalidade", "Uma forma do time garantir que o software satisfaz os requisites dos usuários", "Uma forma de garantir que os desenvolvedores trabalhem de forma unida", "Uma técnica que garante que cada unidade de um cluster de computadores realize as operações do código corretamente"],
+		["Qual alternativa não representa um lado do quadrante do teste ágil?", "Foco no desempenho", "Crítica ao produto", "Foco em tecnologia", "Suporte ao time"],
+		["Dentre as ferramentas abaixo, qual não é utilizada diretamente na automação de testes?", "TestLink", "JMeter", "CasperJs", "NUnit"]
+		
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Testes depois da resposta.";
 

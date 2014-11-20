@@ -1,6 +1,6 @@
 @import url(font.css);
 body {
-  font: 200% "Kalam", cursive;
+  font: 175% "Kalam", cursive;
   color: #333;
   background: #eee;
   position: relative; }
@@ -83,6 +83,7 @@ section.categorias-quiz {
     margin: 1px -3px;
     padding: 10px;
     color: #ededed;
+    line-height: 30px;
     position: relative;
     width: 200px;
     height: 200px;
@@ -113,9 +114,9 @@ section.categorias-quiz {
       .categorias li#temaUX .icone {
         width: 110px;
         background-position: 0 -1415px; }
-    .categorias li#temaAgilidade {
+    .categorias li#temaDesenvolvimentoAgil {
       background-color: #bd4847; }
-      .categorias li#temaAgilidade .icone {
+      .categorias li#temaDesenvolvimentoAgil .icone {
         width: 110px;
         background-position: 0 -1775px; }
     .categorias li#temaTestes {
@@ -128,9 +129,9 @@ section.categorias-quiz {
       .categorias li#temaDigithoBrasil .icone {
         width: 145px;
         background-position: 0 -1290px; }
-    .categorias li#temaTendencias {
+    .categorias li#temaCulturaAgil {
       background-color: #be448d; }
-      .categorias li#temaTendencias .icone {
+      .categorias li#temaCulturaAgil .icone {
         width: 80px;
         background-position: 0 -1540px; }
     .categorias li#temaCulturaNerd {
@@ -157,7 +158,10 @@ section.categorias-quiz {
 
 #questoes {
   display: none;
-  color: white; }
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
   #questoes.exibir {
     display: block;
     position: fixed;
@@ -168,7 +172,7 @@ section.categorias-quiz {
     width: 100%;
     height: 100%;
     z-index: 5; }
-  #questoes.agilidade {
+  #questoes.cultura-agil {
     background: #bd4847; }
   #questoes.ux {
     background: #3173b8; }
@@ -182,7 +186,7 @@ section.categorias-quiz {
     background: #4293a5; }
   #questoes.digithobrasil {
     background: #7d448f; }
-  #questoes.tendencias {
+  #questoes.desenvolvimento-agil {
     background: #be448d; }
   #questoes .mensagem {
     display: none; }
@@ -211,8 +215,7 @@ section.categorias-quiz {
   #questoes h2 {
     margin: 100px auto 20px;
     text-align: center;
-    display: table;
-    text-decoration: underline; }
+    display: table; }
   #questoes ul {
     display: table;
     margin: 0 auto;

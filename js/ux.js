@@ -1,9 +1,15 @@
 function montarQuestoesUX(){
 	var questoes = new Array( 
-		["Questão User Experience 01?", "01 Resposta User Experience 01 Certa", "01 Resposta User Experience Errada 02", "01 Resposta User Experience Errada 03", "01 Resposta User Experience Errada 04"],
-		["Questão User Experience 02?", "02 Resposta User Experience 01 Certa", "02 Resposta User Experience Errada 02", "02 Resposta User Experience Errada 03", "02 Resposta User Experience Errada 04"],
-		["Questão User Experience 03?", "03 Resposta User Experience 01 Certa", "03 Resposta User Experience Errada 02", "03 Resposta User Experience Errada 03", "03 Resposta User Experience Errada 04"],
-		["Questão User Experience 04?", "04 Resposta User Experience 01 Certa", "04 Resposta User Experience Errada 02", "04 Resposta User Experience Errada 03", "04 Resposta User Experience Errada 04"]
+		["O que são PERSONAS?", "Personagens fictícios criados para representar os diferentes tipos de usuário dentro de um alvo demográfico, atitude e/ou comportamento definido", "Marca de shampoo", "O próprio cliente, que é utilizado para representar o usuário no levantamento de requisitos", "Representa o time de desenvolvimento que está trabalhando na criação da solução para o cliente"],
+		["Qual dos itens abaixo NÃO é um entregável de UX?", "Questionário sócio-cultural", "Wireframe", "Ecossistema", "Teste de usabilidade"],
+		["Qual a função do Teste de Usabilidade?", "Verificar a facilidade que o software/produto/site possui de ser claramente compreendido e manipulado pelo usuário.", "Verificar se o software/produto/site possui erros", "Verificar se o software/produto/site é desejado pelos usuários", "Nenhuma das anteriores, Teste de usabilidade não é uma atribuição do UX"],
+		["“Um detalhamento de cada tarefa que o usuário deseja cumprir ao interagir com o produto”, isso é característica de qual entregável de UX?", "User Stories", "Persona", "Benchmarking", "Roadmap"],
+		["“Um diagrama que explora os múltiplos (e algumas vezes invisíveis) passos tomados pelo consumidor à medida em que eles se engajam com o serviço”, é uma característica de qual entregável de UX?", "Consumer Journey Map ", "Blueprint", "Mapa Conceitual", "Moodboard"],
+		["“O processo coletivo de geração de ideias, sem restrições, que respondem a determinado brief criativo”, é característica de qual entregável de UX?", "Brainstorm", "Pesquisa de usuário", "Benchmarking", "Pesquisa de mercado"],
+		["“Uma visualização em mapa das propriedades digitais da marca, das conexões entre elas e de sua função na estratégia de marketing”, é uma característica de qual entregável de UX?", "Ecossistema", "Análise competitiva", "Proposição de valor", "Entrevista com stakeholders"],
+		["“Uma espécie de história em quadrinhos da série de ações que os consumidores tomarão enquanto estão usando o produto”, é uma característica de qual entregável de UX? ", "Storyboard", "Wireframe", "Lean", "Protótipos"],
+		["“Uma representação visual do fluxo do usuário para completar tarefas dentro do produto”, é uma característica de qual entregável de UX?", "Fluxo do usuário", "Fluxo do produto", "Fluxo do mercado", "Fluxo do fluxo"]
+
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre User Experience depois da resposta.";
 

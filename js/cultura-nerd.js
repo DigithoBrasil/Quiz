@@ -1,9 +1,14 @@
 function montarQuestoesCulturaNerd(){
 	var questoes = new Array( 
-		["Questão Cultura Nerd 01?", "01 Resposta Cultura Nerd 01 Certa", "01 Resposta Cultura Nerd Errada 02", "01 Resposta Cultura Nerd Errada 03", "01 Resposta Cultura Nerd Errada 04"],
-		["Questão Cultura Nerd 02?", "02 Resposta Cultura Nerd 01 Certa", "02 Resposta Cultura Nerd Errada 02", "02 Resposta Cultura Nerd Errada 03", "02 Resposta Cultura Nerd Errada 04"],
-		["Questão Cultura Nerd 03?", "03 Resposta Cultura Nerd 01 Certa", "03 Resposta Cultura Nerd Errada 02", "03 Resposta Cultura Nerd Errada 03", "03 Resposta Cultura Nerd Errada 04"],
-		["Questão Cultura Nerd 04?", "04 Resposta Cultura Nerd 01 Certa", "04 Resposta Cultura Nerd Errada 02", "04 Resposta Cultura Nerd Errada 03", "04 Resposta Cultura Nerd Errada 04"]
+			["Qual game detém o título de mais caro para ser produzido na história?", "GTA", "Super Mario", "Assassin’s Creed", "Final Fantasy"],
+			["Qual o famoso jogo de videogame que chegou a ser proibido no Brasil nos anos 1990 por incitar crimes de trânsito? ", "Carmageddon", "Need for Speed", "Donkey Kong", "Top Gear"],
+			["A saudação vulcana na série Jornada nas Estrelas era característica de qual personagem?", "Spock", "James Tiberius Kirk", "MacCoy", "Hikaru"],
+			["Em média, quantas vezes o personagem Sheldon, do seriado The Big Bang Theory, repete o processo de bater na porta chamando por uma pessoa?", "3", "1", "5", "7"],
+			["Quantas e quais são as famílias que mais se destacam no universo criado por George R.R. Martin nos livros “As Crônicas de Gelo e Fogo”, que inspiraram a série “Game of Thrones”?", "4 – Stark, Targaryen, Lannister e Baratheon", "2 – Stark e Lannister", "3 – Lannister, Tyrrell e Stark", "5 – Stark, Targaryen, Lannister, Baratheon e Martell"],
+			["O personagem de Arnold Schwarzenegger no filme 'O Exterminador do Futuro' diz uma frase clássica. Qual é ela?", "'Hasta la vista, baby'", "'Eu sou o rei do mundo' ('I’m king of the world')", "'Que a força esteja com você' ('May the force be with you')", "'Sigam-me os bons'"],
+			["A expressão artística (ou hobby) de vestir-se como personagens de quadrinhos, games e desenhos animados é chamada de:", "Cosplay", "Halloween", "Playground", "RPG"],
+			["No anime Cavaleiros do Zodíaco, qual a saga na qual os cavaleiros de bronze (Seiya, Hyoga, Shiryu, Shun e Ikki) enfrentam os Cavaleiros de Ouro:", "Saga das 12 Casas", "Saga de Hades", "Saga de Asgard", "Saga de Poseidon"],
+			["Quantas temporadas tem o seriado The Walking Dead?", "5", "12", "2", "7"]
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Cultura Nerd depois da resposta.";
 

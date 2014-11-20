@@ -7,14 +7,14 @@ $font-stack:    Helvetica, sans-serif;
 $font-roboto:	'Roboto', sans-serif;
 $primary-color: #333;
 
-$cor-agilidade:		#bd4847;
-$cor-ux:			#3173b8;
-$cor-front-end:		#c17422;
-$cor-back-end:		#595d63;
-$cor-testes:		#44a075;
-$cor-cultura-nerd: 	#4293a5;
-$cor-digithobrasil:	#7d448f;
-$cor-tendencias:	#be448d;
+$cor-cultura-agil:			#bd4847;
+$cor-ux:					#3173b8;
+$cor-front-end:				#c17422;
+$cor-back-end:				#595d63;
+$cor-testes:				#44a075;
+$cor-cultura-nerd: 			#4293a5;
+$cor-digithobrasil:			#7d448f;
+$cor-desenvolvimento-agil:	#be448d;
 
 
 
@@ -39,7 +39,7 @@ $cor-tendencias:	#be448d;
 }
 
 body {
-  font: 200% $font-cursiva;
+  font: 175% $font-cursiva;
   color: $primary-color;
   background: #eee;
   position: relative;
@@ -122,6 +122,7 @@ section.categorias-quiz{
 		margin: 1px -3px;
 		padding: 10px;
 		color: #ededed;
+		line-height: 30px;
 		position: relative;
 		width: 200px;
 		height: 200px;
@@ -162,8 +163,8 @@ section.categorias-quiz{
 			}
 		}
 
-		&#temaAgilidade{
-			background-color: $cor-agilidade;
+		&#temaDesenvolvimentoAgil{
+			background-color: $cor-cultura-agil;
 
 			.icone{
 				width:110px;
@@ -189,8 +190,8 @@ section.categorias-quiz{
 			}
 		}
 
-		&#temaTendencias{
-			background-color: $cor-tendencias;
+		&#temaCulturaAgil{
+			background-color: $cor-desenvolvimento-agil;
 
 			.icone{
 				width:80px;
@@ -233,14 +234,17 @@ section.categorias-quiz{
 #questoes{
 	display: none;
 	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
 
 	&.exibir{
 		@include fixaJanela;
 		z-index: 5;
 	}
 
-	&.agilidade{
-		background: $cor-agilidade;
+	&.cultura-agil{
+		background: $cor-cultura-agil;
 	}
 
 	&.ux{
@@ -267,8 +271,8 @@ section.categorias-quiz{
 		background: $cor-digithobrasil;
 	}
 
-	&.tendencias{
-		background: $cor-tendencias;
+	&.desenvolvimento-agil{
+		background: $cor-desenvolvimento-agil;
 	}
 
 	.mensagem{
@@ -302,7 +306,6 @@ section.categorias-quiz{
 		margin: 100px auto 20px;
 		text-align: center;
 		display: table;
-		text-decoration: underline;
 	}
 
 	ul{
@@ -359,7 +362,7 @@ section.categorias-quiz{
 		}
 
 		p.exibe-resposta-certa{
-			color:$cor-agilidade;
+			color:$cor-cultura-agil;
 			.span{
 				font-size: 1.2em;
 			}
@@ -419,7 +422,7 @@ section.categorias-quiz{
 @keyframes backgroundAnimado {
   	0% { background-color: $cor-cultura-nerd ; }
 
-	12.5% { background-color: $cor-agilidade ;}
+	12.5% { background-color: $cor-cultura-agil ;}
 
   	25% { background-color: $cor-back-end ; }
 
@@ -429,7 +432,7 @@ section.categorias-quiz{
 
 	62.5% { background-color: $cor-digithobrasil ; }
 
-	75% { background-color: $cor-tendencias ; }
+	75% { background-color: $cor-desenvolvimento-agil ; }
 
 	87.5% { background-color: $cor-testes ; }
 
@@ -462,7 +465,7 @@ section.categorias-quiz{
 			border-radius: 10px 10px 0 0;
 		}
 		&:last-child{
-			background-color: $cor-agilidade;
+			background-color: $cor-cultura-agil;
 			color:white;
 
 			.tempo-gasto, .tempo-final{
