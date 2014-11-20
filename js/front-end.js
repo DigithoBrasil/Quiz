@@ -1,9 +1,9 @@
 function montarQuestoesFrontEnd(){
 	var questoes = new Array( 
-		["Qual o resultado da expressão '1' + 1 (JavaScript)?", "'11'", "2", "'2'", "0"],
-		["Qual o resultado da comparação 20 == '20'?", "True", "False", "null", "Undefined"],
-		["Questão Front-End 03?", "03 Resposta Front-End 01 Certa", "03 Resposta Front-End Errada 02", "03 Resposta Front-End Errada 03", "03 Resposta Front-End Errada 04"],
-		["Questão Front-End 04?", "04 Resposta Front-End 01 Certa", "04 Resposta Front-End Errada 02", "04 Resposta Front-End Errada 03", "04 Resposta Front-End Errada 04"]
+		["Qual o resultado da expressão '1' + 1 em JavaScript?", "'11'", "2", "'2'", "0"],
+		["Qual o resultado da comparação 20 == '20' em JavaScript?", "True", "False", "null", "Undefined"],
+		["Qual das opções não é um método de um Array em JavaScript?", ".remove()", ".push()", ".map()", ".splice()"],
+		["Qual das opções não é uma característica do JavaScript?", "Fortemente tipada", "Baseada em prototype", "Dinâmica", "Lingaguem interpretada"]
 	);
 	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Front-End depois da resposta.";
 
