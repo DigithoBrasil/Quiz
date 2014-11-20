@@ -11,7 +11,8 @@ function montarQuestoesDigithoBrasil(){
 		["Quantos gerentes de projeto existem na DígithoBrasil? DICA: “se você conversou com um desenvolvedore da DígithoBrasil fica fácil”", "Não há gerentes de projeto na DígithoBrasil", "Sete", "Três", "Apenas um"],
 		["A DígithoBrasil orienta suas atividades, práticas e postura de acordo com qual filosofia?", "Agilidade", "Tai-Chi-Chuan", "5s (cinco S)", "ISO 9001"]
 	);
-	var mensagem = "A DígithoBrasil há 13 anos se destaca no desenvolvimento.";
+	var mensagemCerta = "Muito bem! Você mostrou que conhece a nossa empresa e os detalhes da nossa trajetória. Parabéns!",
+		mensagemErrada = "Hummm... Parece que você não está tão familiarizado com a nossa história. Mas isso pode mudar! "
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -36,7 +37,8 @@ function montarQuestoesDigithoBrasil(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

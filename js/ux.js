@@ -11,7 +11,8 @@ function montarQuestoesUX(){
 		["“Uma representação visual do fluxo do usuário para completar tarefas dentro do produto”, é uma característica de qual entregável de UX?", "Fluxo do usuário", "Fluxo do produto", "Fluxo do mercado", "Fluxo do fluxo"]
 
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre User Experience depois da resposta.";
+	var mensagemCerta = "Aliando práticas de UX, as soluções da DígithoBrasil vão além da funcionalidade: criam uma experiência de interação com o usuário. ",
+		mensagemErrada = "A Experiência do Usuário ainda é um tema subaproveitado nas discussões e nos projetos. Mas você pode mudar isso!";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -36,7 +37,8 @@ function montarQuestoesUX(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

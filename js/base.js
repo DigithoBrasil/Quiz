@@ -137,6 +137,7 @@ function validarQuestao() {
 		areaQuestoes.find(".mensagem").show();
 		$("#questoes .mensagem p span.icone").addClass("icone-acertou");
 		$("#questoes .mensagem p:first-child").append("<span class='mensagem-titulo'>Opa, você acertou!</span>");
+		$("#questoes .mensagem .mensagem-certa").show();
 		contarRepostasCertas();
 		bloquearRespondidas();
 		verificaSeAcertou();
@@ -146,6 +147,7 @@ function validarQuestao() {
 		areaQuestoes.find(".mensagem").show();
 		$("#questoes .mensagem p span.icone").addClass("icone-errou");
 		$("#questoes .mensagem p:first-child").append("<span class='mensagem-titulo'>Que pena, você errou!</span>");
+		$("#questoes .mensagem .mensagem-errada").show();
 		bloquearRespondidas();
 		pauseCountdown();
 		pegaResultadoFinal();

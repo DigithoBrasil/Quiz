@@ -10,7 +10,8 @@ function montarQuestoesBackEnd(){
 		["Qual é o benefício dos padrões de nomenclaturas do código fonte?", "Tornar o código mais legível", "Deixar mais visível o nome do desenvolvedor que trabalhou no código", "Facilitar a distinção entre diferentes produtos de software", "Garantir que “métodos órfãos” não sejam criados"]
 
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Back-End depois da resposta.";
+	var mensagemCerta = "É no back-end que a regra de negócio se refina para atender (de verdade) a necessidade do cliente, que é base da visão da DígithoBrasil. ",
+		mensagemErrada = "Codar, codar, codar... Isso não é tudo, meu amigo! Boa sorte na próxima questão. ";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -35,7 +36,8 @@ function montarQuestoesBackEnd(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

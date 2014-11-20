@@ -15,7 +15,8 @@ function montarQuestoesDesenvolvimentoAgil(){
 		["Considerando o framework Scrum, o que acontece na Sprint 0?", "Não existe Sprint 0", "Planejamento detalhado do projeto, criação da arquitetura básica do sistema, configuração do controle de versão e integração contínua", "Definição da arquitetura base e design do sistema", "Levantamento de requisitos, configuração do controle de versão e integração contínua"],
 		["Na criação do Scrum alguns modelos de cerimonias foram influenciadas pelo time de um projeto desenvolvido na Borland em 1994, qual o nome do projeto:", "Quattro Pro for Windows", "Borland c++ Builder for Windows", "Delphi 7", "Borland Database Engine"]
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Agilidade depois da resposta.";
+	var mensagemCerta = "Estamos sem comentário para resposta certa!", 
+		mensagemErrada = "Estamos sem comentário para resposta errada!";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -41,7 +42,8 @@ function montarQuestoesDesenvolvimentoAgil(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

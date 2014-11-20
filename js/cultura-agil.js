@@ -7,7 +7,8 @@ function montarQuestoesCulturaAgil(){
 		["Quando se fala em agilidade, qual é a maior prioridade?", "Satisfazer o cliente através da entrega contínua e adiantada da solução com valor agregado", "Satisfazer o cliente fazendo tudo o que ele deseja, quando ele deseja", "Satisfazer o time, dando ao time todas as condições de trabalho desejadas", "Nenhuma das anteriores"],
 		["Dos itens abaixo, qual deles NÃO se encaixa na cultura ágil?", "Análise e documentação, mais que arriscar e errar", "Indivíduos e interações, mais que processos e ferramentas", "Colaboração com o cliente, mais que negociação de contratos", "Responder a mudanças, mais que seguir um plano"]
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Agilidade depois da resposta.";
+	var mensagemCerta = "A DígithoBrasil vive a agilidade há um tempo e pode afirmar: o resultado aparece e permanece!",
+		mensagemErrada = "Vale a pena atualizar seu conhecimento sobre agilidade e colocar em prática já. Ainda dá tempo!";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -33,7 +34,8 @@ function montarQuestoesCulturaAgil(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

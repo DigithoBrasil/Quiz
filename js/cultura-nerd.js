@@ -10,7 +10,8 @@ function montarQuestoesCulturaNerd(){
 			["No anime Cavaleiros do Zodíaco, qual a saga na qual os cavaleiros de bronze (Seiya, Hyoga, Shiryu, Shun e Ikki) enfrentam os Cavaleiros de Ouro:", "Saga das 12 Casas", "Saga de Hades", "Saga de Asgard", "Saga de Poseidon"],
 			["Quantas temporadas tem o seriado The Walking Dead?", "5", "12", "2", "7"]
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Cultura Nerd depois da resposta.";
+	var mensagemCerta = "Quadrinhos, games, filmes, seriado: a cultura desenvolve a inteligência e o senso crítico. E a DígithoBrasil valoriza isso!",
+		mensagemErrada = "Não foi dessa vez. Mas aqui vai uma dica: nunca é tarde para enriquecer sua bagagem cultural!";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -35,7 +36,8 @@ function montarQuestoesCulturaNerd(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);

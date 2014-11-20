@@ -11,7 +11,8 @@ function montarQuestoesTestes(){
 		["Dentre as ferramentas abaixo, qual não é utilizada diretamente na automação de testes?", "TestLink", "JMeter", "CasperJs", "NUnit"]
 		
 	);
-	var mensagem = "Esta é a mensagem da DígithoBrasil sobre Testes depois da resposta.";
+	var mensagemCerta = "Na DígithoBrasil é assim: o código tá certo, a “capa” tá no jeito e o teste tá rodando? Então é sucesso!", 
+		mensagemErrada = "De nada adianta só ‘worká na sua machine’. Testar é atribuir qualidade à solução. Pense (e pratique) nisso!";
 
 	var pegaAleatorio = Math.floor(Math.random() * questoes.length);
 
@@ -36,7 +37,8 @@ function montarQuestoesTestes(){
 			"<div class='mensagem'>" +
 				"<p><span class='icone'></span></p>" +
 				"<p class='exibe-resposta-certa'>A resposta certa é '<span>" + respostaCerta + "'</span></p>" +
-				"<p>" + mensagem +"</p>" +
+				"<p style='display:none;' class='mensagem-certa'>" + mensagemCerta +"</p>" +
+				"<p style='display:none;' class='mensagem-errada'>" + mensagemErrada +"</p>" +
 				"<button type='button' class='fechar-mensagem' onclick='fecharMensagem();'>OK</button>" + 
 			"</div>"
 		);
