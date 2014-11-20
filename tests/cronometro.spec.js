@@ -10,8 +10,8 @@ describe("Cronômetro", function() {
 
 		cronometro.iniciar(callbackDoCronometro, intervaloDeTempo);
 
-		expect(window.setTimeout.calls.argsFor(0)[0].toString()).toContain("_callback.apply");
-		expect(window.setTimeout.calls.argsFor(0)[1]).toBe(intervaloDeTempo);
+		expect(window.setTimeout.argumentoDaChamada(0).toString()).toContain("_callback.apply");
+		expect(window.setTimeout.argumentoDaChamada(1)).toBe(intervaloDeTempo);
 	});
 
 	it("deve informar o callback", function() {
