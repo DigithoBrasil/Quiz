@@ -474,3 +474,48 @@ section.categorias-quiz{
 		}
 	}
 }
+
+.formulario-final{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background: #fff;
+	padding: 40px;
+	z-index: 10;
+	box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	bottom: 20px;
+	right: 20px;
+	text-align: center;
+
+	p, h2, input{
+		width:800px;
+		margin: 0 auto 30px; 
+	}
+
+	h2{
+		font-size: 1.5em;
+		color: $cor-digithobrasil;
+	}
+
+	p{
+
+		&:last-child{
+			margin-bottom: 10px;
+		}
+		
+		span{
+			color: $cor-testes;
+		}
+	}
+
+	input{
+		padding: 10px;
+		font-family: $font-roboto;
+		font-size: 120%;
+		margin: -1px auto;
+		display: block;
+		border: 1px solid #ddd;
+		background: #fcfcfc;
+		box-sizing:border-box;
+	}
+}

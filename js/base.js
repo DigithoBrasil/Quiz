@@ -72,9 +72,13 @@ function pegaResultadoFinal() {
 	if (pegaTotalDeRespondidos == 8) {
 		$(".tempo-gasto").removeAttr("class").addClass("tempo-final").text(tempo);
 		$("body")
-			.append("<input id='nome' type='text' placeholder='Nome' />")
-			.append("<input id='email' type='text' placeholder='Email' />")
-			.append("<a href='/' onclick='finalizar(); return false;' class='botao-final'>Finalizar</a>");
+			.append("<div class='formulario-final'>" +
+				"<h2>Obrigado por participar do nosso Quiz! </h2> <p>Você acertou <span>" + respostasCorretas + "</span> de <span>8</span> questões em <span>" + tempo + "</span>.</p> <p>Informe seu nome e e-mail nos campos abaixo!</p>" +
+				"<input id='nome' type='text' placeholder='Nome' />" +
+				"<input id='email' type='text' placeholder='Email' />" +
+				"<a href='/' onclick='finalizar(); return false;' class='botao-final'>Finalizar</a>" +
+				"</div>"
+			);
 	}
 }
 
@@ -138,6 +142,8 @@ function validarQuestao() {
 		$("#questoes .mensagem p span.icone").addClass("icone-acertou");
 		$("#questoes .mensagem p:first-child").append("<span class='mensagem-titulo'>Opa, você acertou!</span>");
 		$("#questoes .mensagem .mensagem-certa").show();
+		$("#questoes button:first").attr("disabled", "disabled");
+
 		contarRepostasCertas();
 		bloquearRespondidas();
 		verificaSeAcertou();
@@ -148,6 +154,7 @@ function validarQuestao() {
 		$("#questoes .mensagem p span.icone").addClass("icone-errou");
 		$("#questoes .mensagem p:first-child").append("<span class='mensagem-titulo'>Que pena, você errou!</span>");
 		$("#questoes .mensagem .mensagem-errada").show();
+		$("#questoes button:first").attr("disabled", "disabled");
 		bloquearRespondidas();
 		pauseCountdown();
 		pegaResultadoFinal();
