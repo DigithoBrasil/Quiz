@@ -1,10 +1,11 @@
 function montarQuestoesFrontEnd(){
-	var questoes = new Array( 
+	var questoes = new Array(
 		["Qual o resultado da expressão '1' + 1 em JavaScript?", "'11'", "2", "'2'", "0"],
 		["Qual o resultado da comparação 20 == '20' em JavaScript?", "True", "False", "null", "Undefined"],
 		["Qual das opções não é um método de um Array em JavaScript?", ".remove()", ".push()", ".map()", ".splice()"],
 		["Qual das opções não é uma característica do JavaScript?", "Fortemente tipada", "Baseada em prototype", "Dinâmica", "Linguagem interpretada"],
-		["Qual das opções abaixo representa uma forma correta de criar uma função em JavaScript?", "var fn = function() { }", "function = fn() { }", "function void fn() { }", "function() { }"]
+		["Qual das opções abaixo representa uma forma correta de criar uma função em JavaScript?", "var fn = function() { }", "function = fn() { }", "function void fn() { }", "function() { }"],
+		["Qual a forma correta de se criar um vetor em JavaScript?", "var cores = ['vermelho', 'verde', 'azul']", "var cores = (1:'vermelho', 2:'verde', 3:'azul')", "var cores = 'vermelho', 'verde', 'azul'", "var cores = 1 = ('vermelho'), 2 = ('verde'), 3 = ('azul')"]
 	);
 	var mensagemCerta = "A coleta de dados para o processamento das regras de negócio é etapa fundamental da solução. E na DígithoBrasil esse assunto é prioritário!", 
 		mensagemErrada = "Tá rodando legal, mas o visual da solução... tem que ver issae!";
