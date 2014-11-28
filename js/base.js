@@ -71,14 +71,16 @@ function pegaResultadoFinal() {
 
 	if (pegaTotalDeRespondidos == 8) {
 		$(".tempo-gasto").removeAttr("class").addClass("tempo-final").text(tempo);
-		$("body")
-			.append("<div class='formulario-final'>" +
-				"<h2>Obrigado por participar do nosso Quiz! </h2> <p>Você acertou <span>" + respostasCorretas + "</span> de <span>8</span> questões em <span>" + tempo + "</span>.</p> <p>Informe seu nome e e-mail nos campos abaixo!</p>" +
-				"<input id='nome' type='text' placeholder='Nome' />" +
-				"<input id='email' type='text' placeholder='Email' />" +
-				"<a href='/' onclick='finalizar(); return false;' class='botao-final'>Finalizar</a>" +
-				"</div>"
-			);
+		$(".fechar-mensagem").on("click", function(){
+			$("body")
+				.append("<div class='formulario-final'>" +
+					"<h2>Obrigado por participar do nosso Quiz! </h2> <p>Você acertou <span>" + respostasCorretas + "</span> de <span>8</span> questões em <span>" + tempo + "</span>.</p> <p>Informe seu nome e e-mail nos campos abaixo!</p>" +
+					"<input id='nome' type='text' placeholder='Nome' />" +
+					"<input id='email' type='text' placeholder='Email' />" +
+					"<a href='/' onclick='finalizar(); return false;' class='botao-final'>Finalizar</a>" +
+					"</div>"
+				);
+			});
 	}
 }
 

@@ -3,8 +3,8 @@ function montarQuestoesCulturaAgil(){
 		["Qual o fator ou fatores são essenciais para entregar valor ao cliente?", "Maximizar os benefícios e reduzir os custos", "A qualidade da análise de negócio", "Prazo, custo e escopo", "Novas tecnologias"],
 		["Quantos princípios existem no manifesto ágil?","12","10","15","Existem vários que são criados diariamente"],
 		["Baseado no manifesto ágil, como se dá a entrega de soluções ao cliente?", "Frequentemente, de semanas a poucos meses. O que puder ser feito primeiro", "Tudo de uma vez, quando a solução estiver concluída", "Quando o cliente exige, no prazo estipulado", "Quando o time definir"],
-		["Qual é a melhor forma de transmitir informação entre entre os indíviduos?", "Conversa face a face", "Por email", "Por telefone", "Por recado"],
-		["Quando se fala em agilidade, qual é a maior prioridade?", "Satisfazer o cliente através da entrega contínua e adiantada da solução com valor agregado", "Satisfazer o cliente fazendo tudo o que ele deseja, quando ele deseja", "Satisfazer o time, dando ao time todas as condições de trabalho desejadas", "Nenhuma das anteriores"],
+		["Qual é a melhor forma de transmitir informação entre os indíviduos?", "Conversa face a face", "Por email", "Por telefone", "Por recado"],
+		["Quando se fala em agilidade, qual é a maior prioridade?", "Satisfazer o cliente através da entrega contínua e adiantada da solução com valor agregado", "Satisfazer o cliente fazendo tudo o que ele deseja, quando ele deseja", "Satisfazer o time, dando ao time todas as condições de trabalho desejadas", "Não é necessário fazer ninguém, o importante mesmo é entregar."],
 		["Dos itens abaixo, qual deles NÃO se encaixa na cultura ágil?", "Análise e documentação, mais que arriscar e errar", "Indivíduos e interações, mais que processos e ferramentas", "Colaboração com o cliente, mais que negociação de contratos", "Responder a mudanças, mais que seguir um plano"]
 	);
 	var mensagemCerta = "A DígithoBrasil vive a agilidade há um tempo e pode afirmar: o resultado aparece e permanece!",
