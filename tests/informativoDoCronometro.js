@@ -1,3 +1,0 @@
-(function(self) {
-
-})(window.informativoDoCronometro = {});
